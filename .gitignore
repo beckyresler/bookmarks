@@ -1,20 +1,24 @@
-vendor/
+### Default Laravel Framework Ignored Files ###
+.idea/
+.vagrant/
 node_modules/
-npm-debug.log
-
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
 storage/*.key
-.env.*.php
-.env.php
-.env
-Homestead.yaml
+vendor/
 Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.env
 
-# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
-.rocketeer/
+
+### IDE Related Files ###
+.phpstorm.meta.php
+_ide_helper.php
+
+
+### OS Files ###
+.DS_Store
+Thumbs.db
+
+
+### Project Files ###
