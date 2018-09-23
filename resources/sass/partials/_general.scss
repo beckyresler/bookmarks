@@ -1,0 +1,46 @@
+body {
+    font-family:    Lato, sans-serif;
+    font-size:      $rem-base;
+    color:          #555;
+}
+
+h1, h2, h3 {
+    font-family:    Federo, sans-serif;
+    color:          #b24822;
+    margin:         0 0 1rem;
+}
+
+h1 {
+    font-size: rem-calc(36);
+}
+
+h2 {
+    font-size: rem-calc(24);
+}
+
+h3 {
+    font-size: rem-calc(20);
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    color:              #641b10;
+    text-decoration:    none;
+    transition:         color 0.25s ease-out;
+
+    &:focus,
+    &:hover {
+        color: #b24822;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}

@@ -1,0 +1,30 @@
+label {
+    font-weight:    bold;
+    display:        block;
+    margin-bottom:  0.25rem;
+
+    &.inline {
+        display: inline-block;
+    }
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    display:    block;
+    width:      100%;
+    padding:    0.5rem 0.5rem;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: 1px solid #641b10;
+    }
+}
+
+.field-group {
+    margin-bottom: 1.5rem;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}

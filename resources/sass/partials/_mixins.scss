@@ -1,0 +1,22 @@
+/// Gives a card depth effect.
+/// @param {Number} $depth - depth level (between 1 and 5)
+/// @link http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality Google Design
+/// @requires {function} top-shadow
+/// @requires {function} bottom-shadow
+/// SOURCE: https://css-tricks.com/snippets/sass/material-shadows-mixin/
+@mixin card($depth) {
+    @if $depth < 1 {
+        box-shadow: none;
+    } @else if $depth > 5 {
+        @warn "Invalid $depth `#{$depth}` for mixin `card`.";
+    } @else {
+        box-shadow: bottom-shadow($depth), top-shadow($depth);
+    }
+}
+
+// Adds a box shadow
+@mixin box-shadow($params...) {
+    -webkit-box-shadow: $params;
+    -moz-box-shadow:    $params;
+    box-shadow:         $params;
+}
