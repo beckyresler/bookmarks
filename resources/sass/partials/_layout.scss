@@ -2,3 +2,26 @@ body {
     background: #eee;
     padding:    1rem;
 }
+
+.links-container {
+    display:            flex;
+    flex-flow:          row wrap;
+    justify-content:    flex-start;
+    align-content:      flex-start;
+    align-items:        flex-start;
+
+    .category {
+        width:  200px;
+        margin: 0 0.5rem 2rem;
+
+        ul {
+            margin:             0;
+            padding:            0;
+            list-style-type:    none;
+
+            li {
+                margin: 0 0 0.5rem;
+            }
+        }
+    }
+}
