@@ -1,5 +1,16 @@
 <?php
 
+// determine the MySQL host and port to use
+// - local development is being done on a Homestead VM
+// - these changes are necessary to allow migrations to be run on the host machine
+$mysqlHost = env('DB_HOST', '127.0.0.1');
+$mysqlPort = env('DB_PORT', '3306');
+if(env('APP_ENV', 'production') == 'local')
+{
+	$mysqlHost = (gethostname() == 'homestead') ? 'localhost' : '127.0.0.1';
+	$mysqlPort = (gethostname() == 'homestead') ? null : 33060;
+}
+
 return [
 
     /*
@@ -41,8 +52,8 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
+            'host' => $mysqlHost,
+            'port' => $mysqlPort,
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
