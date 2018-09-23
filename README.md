@@ -9,14 +9,17 @@ Quite a while back, I set up a static HTML file containing groups of links that 
 
 I set this static file as the "home page" for my browser. The file lives in my Dropbox folder so that I can have it available on my work computer.
 
-This has worked well for me, but updating the file is klunky. Also, I haven't figured out how to load the file in my mobile browser.
+This has worked well for me, but updating the file is clunky. Also, I haven't figured out how to load the file in my mobile browser.
 
 I decided to develop this application to make managing my links easier and to make the links available on any device that I need them on.
 
 
 ## Technical Information
 
-This application uses [version 5.7 of the Laravel framework](https://laravel.com/docs/5.7/).
+This application uses the following packages, library, technology, etc.
+
+* [Laravel framework](https://laravel.com/docs/5.7/) - version 5.7.x
+* [FontAwesome icon fonts](https://fontawesome.com) - version 5.3.x
 
 
 ## License
