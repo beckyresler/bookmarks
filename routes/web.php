@@ -14,9 +14,7 @@
 // Routes that require authentication - basically everything except the auth routes (below)
 Route::middleware('auth')->group(function(){
 
-	Route::get('/', function () {
-	    return view('welcome');
-	})->name('home');
+	Route::get('/', ['uses' => 'HomeController@index'])->name('home');
 
 	// Routes for management functionality
 	Route::prefix('sitemanager')->group(function(){
