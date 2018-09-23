@@ -29,24 +29,12 @@ return [
 
 	/*
 	|--------------------------------------------------------------------------
-	| Google Analytics Tracking Code
-	|--------------------------------------------------------------------------
-	|
-	| The tracking code for the Google Analytics account used by the website.
-	| Example: UA-19483569-6
-	|
-	*/
-	'google_analytics_tracking_code' => env('GOOGLE_ANALYTICS_TRACKING_CODE', null),
-
-
-	/*
-	|--------------------------------------------------------------------------
 	| Meta Title Divider
 	|--------------------------------------------------------------------------
 	|
 	| The character (or string) to use to separate the pages in the meta title.
 	|
 	*/
-	'meta_title_divider' => '|',
+	'meta_title_divider' => ' &ndash; ',
 
 ];
