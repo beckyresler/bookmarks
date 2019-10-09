@@ -18,7 +18,7 @@ I decided to develop this application to make managing my links easier and to ma
 
 This application uses the following packages, library, technology, etc.
 
-* [Laravel framework](https://laravel.com/docs/5.7/) - version 5.7.x
+* [Laravel framework](https://laravel.com/docs/6.x/) - version 6.x
 * [FontAwesome icon fonts](https://fontawesome.com) - version 5.3.x
 
 
