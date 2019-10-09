@@ -11,9 +11,9 @@
     },
     "devDependencies": {
         "@fortawesome/fontawesome-free": "^5.11.2",
-        "cross-env": "^5.2.1",
+        "cross-env": "^5.2",
         "jquery": "^3.4.1",
-        "laravel-mix": "^2.0",
+        "laravel-mix": "^4.0.7",
         "normalize.css": "^8.0.1"
     },
     "dependencies": {
